@@ -30,6 +30,8 @@
 
 /**
  上个响应者
+ 如果当前这个view 是控制器的view 那么控制器是上一个响应者。
+ 如果当前这个view 不是控制器的view 那么父控件就是上一个响应者
  **/
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
