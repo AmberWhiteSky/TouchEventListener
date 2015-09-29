@@ -34,6 +34,14 @@
  如果当前这个view 不是控制器的view 那么父控件就是上一个响应者
  **/
 
+
+/**
+ 什么是响应者链条？
+ 1响应者链条就是由多个响应者连接起来的链条（什么事响应者对象 能处理事件的对象）
+ 2利用响应者链条 能让多个控件处理同一个触摸事件
+ 3怎么利用链条往上传递，？谁是上一个响应者链？
+ **/
+
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
     NSLog(@"GreenView  ---touchesBegan%@",self.class);
